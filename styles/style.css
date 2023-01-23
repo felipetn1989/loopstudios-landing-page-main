@@ -91,9 +91,220 @@ h6 {
   --fw-regular: 400;
 }
 
+/* General settings */
+
+body {
+  font-family: var(--ff-headings);
+  font-size: 0.9375rem;
+}
+
+header {
+  background: url("../images/mobile/image-hero.jpg") no-repeat center
+    center/cover;
+  color: var(--White);
+  padding: 1.75rem 1.5rem;
+}
+
+header > h1 {
+  border: 2px solid var(--White);
+  font-size: 2.375rem;
+  line-height: 2.25rem;
+  padding: 1.5rem;
+  margin: 10.25rem 0 12rem 0;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.8125rem;
+}
+
+p {
+  font-family: var(--ff-text);
+  color: var(--Very-Dark-Gray);
+}
+
+.page__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 9rem;
+}
+
+.header__menu {
+  display: none;
+}
+
+.studio_info {
+  text-align: center;
+  padding: 6rem 1.5rem;
+  display: grid;
+  gap: 7rem;
+}
+
+.studio_info_header h2 {
+  line-height: normal;
+  margin: 2.5rem 0 1rem 0;
+}
+
+.studio_info_header p {
+  margin: 0 1rem;
+}
+
+.studio_info_creations {
+  display: grid;
+  gap: 2.75rem;
+}
+
+.studio_info_creations h2 {
+  font-size: 1.875rem;
+}
+
+.see_desktop {
+  display: none;
+}
+
+.creations_list {
+  display: grid;
+  gap: 1.5rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.creations_list li {
+  text-transform: uppercase;
+  color: var(--White);
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: normal;
+  padding: 2.625rem 0 0rem 1.25rem;
+}
+
+.creation {
+  background: url("../images/mobile/image-deep-earth.jpg") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 7.25rem;
+  position: relative;
+}
+
+.creation:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  color: var(--Black);
+}
+
+.deepEatch {
+  background-image: url(../images/mobile/image-deep-earth.jpg);
+}
+
+.nightArcade {
+  background-image: url(../images/mobile/image-night-arcade.jpg);
+}
+
+.soccerTeam {
+  background-image: url(../images/mobile/image-soccer-team.jpg);
+}
+
+.theGrid {
+  background-image: url(../images/mobile/image-grid.jpg);
+}
+
+.aboveVR {
+  background-image: url(../images/mobile/image-from-above.jpg);
+}
+
+.borealis {
+  background-image: url(../images/mobile/image-pocket-borealis.jpg);
+}
+
+.curiosity {
+  background-image: url(../images/mobile/image-curiosity.jpg);
+}
+
+.fisheye {
+  background-image: url(../images/mobile/image-fisheye.jpg);
+}
+
+.see_mobile {
+  border: 1px solid black;
+  background-color: var(--White);
+  text-transform: uppercase;
+  font-family: var(--ff-text);
+  font-size: 0.875rem;
+  font-weight: bolder;
+  letter-spacing: 0.25rem;
+  width: 50%;
+  padding: 0.5625rem;
+  place-self: center;
+  margin-top: -0.5rem;
+}
+
+.see_mobile:hover {
+  cursor: pointer;
+  background-color: var(--Black);
+  color: var(--White);
+}
+
+footer {
+  background-color: var(--Black);
+  text-align: center;
+  display: grid;
+  gap: 1.75rem;
+  padding: 3rem 0 1rem 0;
+}
+
+.footer__logo {
+  width: 9rem;
+  margin: auto;
+}
+
+.footer__menu {
+  list-style-type: none;
+}
+
+.menu_list {
+  padding: 0;
+  line-height: 2.5rem;
+}
+
+.menu_list li a {
+  text-decoration: none;
+  color: var(--White);
+  font-family: var(--ff-text);
+  font-weight: var(--fw-regular);
+}
+
+.menu_list a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid var(--White);
+  padding-bottom: 0.5rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: -0.75rem;
+}
+
+.icons img:hover {
+  cursor: pointer;
+  border-bottom: 1px solid var(--White);
+  padding-bottom: 0.5rem;
+}
+
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
+  color: var(--White);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
