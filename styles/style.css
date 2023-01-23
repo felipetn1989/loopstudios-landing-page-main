@@ -102,14 +102,14 @@ header {
   background: url("../images/mobile/image-hero.jpg") no-repeat center
     center/cover;
   color: var(--White);
-  padding: 1.75rem 1.5rem;
+  padding: 2.5625rem 1.5rem;
 }
 
 header > h1 {
   border: 2px solid var(--White);
   font-size: 2.375rem;
   line-height: 2.25rem;
-  padding: 1.5rem;
+  padding: 1.875rem;
   margin: 10.25rem 0 12rem 0;
 }
 
@@ -365,6 +365,7 @@ footer .menu_list {
     font-size: 4rem;
     line-height: normal;
     margin-bottom: 5rem;
+    margin-top: 8rem;
   }
 
   .header__menu__list {
@@ -378,6 +379,11 @@ footer .menu_list {
     font-size: 0.9375rem;
     font-weight: var(--fw-regular);
     font-family: var(--ff-text);
+  }
+
+  .header__menu__list li:hover {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
   }
 
   .studio_info_header {
@@ -431,6 +437,8 @@ footer .menu_list {
       "one two"
       "three three";
     row-gap: 5.25rem;
+    padding-top: 4rem;
+    padding-bottom: 6.75rem;
   }
 
   .studio_info_creations h2 {

@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/Screenshot%202023-01-23%20at%2020-07-58%20Frontend%20Mentor%20Loopstudios%20landing%20page.png)
 
 
 ### Links
