@@ -437,4 +437,42 @@ footer .menu_list {
   .grid_2:nth-child(3) {
     grid-area: three;
   }
+
+  footer {
+    display: grid;
+    grid-template-areas:
+    "one three"
+    "two four"
+    "five five";
+    margin: unset;
+    padding: 3rem 10.5rem;
+  }
+
+  .footer__logo {
+    grid-area: one;
+    margin: unset;
+  }
+
+  .footer__menu {
+    grid-area: two;
+  }
+
+  .footer__list {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .icons {
+    grid-area: three;
+    place-self: center end;
+  }
+
+  .copyright {
+    grid-area: four;
+    place-self: center end;
+  }
+
+  .attribution {
+    grid-area: five;
+  }
 }
