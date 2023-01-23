@@ -46,23 +46,3 @@ menuIcon.addEventListener("click", () => {
     menuIcon.style.top = "unset";
   }
 });
-
-/* const headerMenu = document.querySelector(".header__menu");
-const menuIcon = document.querySelector("#menuIcon");
-const headerLogo = document.querySelector(".header__logo");
-const creationTitles = document.querySelectorAll(".creation__title");
-
-menuIcon.addEventListener("click", () => {
-  headerMenu.classList.toggle("show");
-  headerLogo.classList.toggle("fixed");
-  menuIcon.classList.toggle("fixed_icon");
-  creationTitles.forEach((creationTitle) => {
-    creationTitle.classList.toggle("hide");
-  });
-
-  if (window.getComputedStyle(headerMenu).display == 'none') {
-    menuIcon.src = 'images/icon-hamburger.svg'
-  } else {
-    menuIcon.src = "images/icon-close.svg";
-  }
-}); */
