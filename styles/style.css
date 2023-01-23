@@ -384,6 +384,34 @@ footer .menu_list {
     padding: 4rem 11rem;
   }
 
+  .grid_1:nth-child(1) {
+    grid-area: one;
+  }
+
+  .grid_1:nth-child(2) {
+    grid-area: two;
+    grid-row: -2/-1;
+    text-align: left;
+  }
+
+  .studio_info_header h2 {
+    font-size: 3rem;
+    font-weight: var(--fw-light);
+  }
+
+  .studio_info_header p {
+    margin: unset;
+  }
+
+  .studio_info_header {
+    display: grid;
+    grid-template-areas:
+      "one two"
+      "one two";
+    grid-template-columns: 1fr 1fr;
+
+  }
+
   .studio_info_creations {
     grid-template-areas:
       "one two"
@@ -441,9 +469,10 @@ footer .menu_list {
   footer {
     display: grid;
     grid-template-areas:
-    "one three"
-    "two four"
-    "five five";
+      "one three"
+      "two four"
+      "five five";
+    grid-template-columns: 1fr 1fr;
     margin: unset;
     padding: 3rem 10.5rem;
   }
