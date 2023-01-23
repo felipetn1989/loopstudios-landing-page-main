@@ -1,8 +1,12 @@
+/* Variables declared */
+
 const creations = document.querySelectorAll(".creation");
 
 const creationTitles = document.querySelectorAll(".creation__title");
 
 const creationBackgrounds = document.querySelectorAll(".creation__background");
+
+/* This forEach will create eventListeners for both mouseover and mouseout events to create the hover effects for the Our Creations elements of the page. */
 
 creations.forEach((creation, index) => {
   creation.addEventListener("mouseover", () => {
@@ -21,28 +25,18 @@ const headerMenu = document.querySelector(".header__menu");
 
 const headerLogo = document.querySelector(".header__logo");
 
+/* This time I used the classList function instead of if...else statements. It was able to reduce the number of lines of code by half. Every time I click on menuIcon, the function will add certain classes to my elements if they are not present and remove those classes if they are already there. */
+
 menuIcon.addEventListener("click", () => {
-  if (window.getComputedStyle(headerMenu).display == "none") {
-    headerMenu.style.display = "block";
-    creationTitles.forEach((creationTitle) => {
-      creationTitle.style.display = "none";
-    });
-    menuIcon.src = "images/icon-close.svg";
-    headerLogo.style.position = "fixed";
-    headerLogo.style.top = "1.75rem";
-    menuIcon.style.position = "fixed";
-    menuIcon.style.right = "1.5rem";
-    menuIcon.style.top = "1.75rem";
-  } else {
-    headerMenu.style.display = "none";
-    creationTitles.forEach((creationTitle) => {
-      creationTitle.style.display = "block";
-    });
-    menuIcon.src = "images/icon-hamburger.svg";
-    headerLogo.style.position = "unset";
-    headerLogo.style.top = "unset";
-    menuIcon.style.position = "unset";
-    menuIcon.style.right = "unset";
-    menuIcon.style.top = "unset";
-  }
+  headerMenu.classList.toggle("display");
+  headerLogo.classList.toggle("placement");
+  menuIcon.classList.toggle("iconPlacement");
+  menuIcon.classList.toggle("changeIcon");
+  creationTitles.forEach((creationTitle) => {
+    creationTitle.classList.toggle("hideTitles");
+  });
+
+  menuIcon.src = headerMenu.classList.contains("display")
+    ? "images/icon-close.svg"
+    : "images/icon-hamburger.svg";
 });
