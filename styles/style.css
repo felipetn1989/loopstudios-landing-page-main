@@ -136,10 +136,42 @@ p {
 
 .header__logo {
   width: 9rem;
+  z-index: 1;
 }
 
 .header__menu {
+  position: fixed;
   display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header__menu__list {
+  display: grid;
+  gap: 0.75rem;
+  place-items: center left;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  background-color: var(--Black);
+  padding-top: 13rem;
+  padding-bottom: 22rem;
+  padding-left: 1.5rem;
+  height: 100vh;
+}
+
+.header__menu__list a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+#menuIcon {
+  z-index: 1;
+}
+
+#menuIcon:hover {
+  cursor: pointer;
 }
 
 .studio_info {
@@ -188,49 +220,18 @@ p {
 }
 
 .creation {
-  background: url("../images/mobile/image-deep-earth.jpg") no-repeat center
-    center/cover;
   width: 100%;
   height: 7.25rem;
   position: relative;
 }
 
-.creation:hover {
-  cursor: pointer;
-  opacity: 0.5;
-  color: var(--Black);
-}
-
-.deepEarth {
-  background-image: url(../images/mobile/image-deep-earth.jpg);
-}
-
-.nightArcade {
-  background-image: url(../images/mobile/image-night-arcade.jpg);
-}
-
-.soccerTeam {
-  background-image: url(../images/mobile/image-soccer-team.jpg);
-}
-
-.theGrid {
-  background-image: url(../images/mobile/image-grid.jpg);
-}
-
-.aboveVR {
-  background-image: url(../images/mobile/image-from-above.jpg);
-}
-
-.borealis {
-  background-image: url(../images/mobile/image-pocket-borealis.jpg);
-}
-
-.curiosity {
-  background-image: url(../images/mobile/image-curiosity.jpg);
-}
-
-.fisheye {
-  background-image: url(../images/mobile/image-fisheye.jpg);
+.creation__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .see_mobile {
@@ -267,25 +268,26 @@ footer {
 }
 
 .footer__menu {
+  padding: 0;
+  line-height: 2.5rem;
   list-style-type: none;
 }
 
-.menu_list {
+footer .menu_list {
   padding: 0;
-  line-height: 2.5rem;
 }
 
-.menu_list li a {
+.footer__menu li a {
   text-decoration: none;
   color: var(--White);
   font-family: var(--ff-text);
   font-weight: var(--fw-regular);
 }
 
-.menu_list a:hover {
+.footer__menu a:hover {
   cursor: pointer;
-  border-bottom: 1px solid var(--White);
-  padding-bottom: 0.5rem;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
 }
 
 .icons {
@@ -295,10 +297,12 @@ footer {
   margin-bottom: -0.75rem;
 }
 
+.icons img {
+  box-sizing: border-box;
+}
+
 .icons img:hover {
   cursor: pointer;
-  border-bottom: 1px solid var(--White);
-  padding-bottom: 0.5rem;
 }
 
 .attribution {
