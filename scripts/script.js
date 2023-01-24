@@ -20,6 +20,9 @@ menuIcon.addEventListener("click", () => {
   creationTitles.forEach((creationTitle) => {
     creationTitle.classList.toggle("hideTitles");
   });
+  creations.forEach((creation) => {
+    creation.classList.toggle("unsetBackground")
+  })
 
   menuIcon.src = headerMenu.classList.contains("display")
     ? "images/icon-close.svg"
