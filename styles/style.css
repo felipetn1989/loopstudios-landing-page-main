@@ -341,6 +341,7 @@ footer .menu_list {
       "three three";
     grid-template-columns: 1.5fr 1fr;
     padding: 4rem 11rem;
+    background-image: url('../images/desktop/image-hero.jpg');
   }
 
   #menuIcon {
