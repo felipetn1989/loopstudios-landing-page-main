@@ -312,12 +312,13 @@ footer .menu_list {
   margin-bottom: -0.75rem;
 }
 
-.icons img {
-  box-sizing: border-box;
-}
-
 .icons img:hover {
   cursor: pointer;
+}
+
+.icons__image:hover + .linkUnderline {
+  border-bottom: 1px solid var(--White);
+  margin-top: 0.0625rem;
 }
 
 .attribution {
