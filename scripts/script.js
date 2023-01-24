@@ -6,21 +6,6 @@ const creationTitles = document.querySelectorAll(".creation__title");
 
 const creationBackgrounds = document.querySelectorAll(".creation__background");
 
-/* This forEach will create eventListeners for both mouseover and mouseout events to create the hover effects for the Our Creations elements of the page. */
-
-creations.forEach((creation, index) => {
-  creation.addEventListener("mouseover", () => {
-    creationTitles[index].style.color = "black";
-    creations[index].style.cursor = "pointer";
-    creationBackgrounds[index].style.opacity = "0.5";
-  });
-  creation.addEventListener("mouseout", () => {
-    creationTitles[index].style.color = "white";
-    creationTitles[index].style.cursor = "unset";
-    creationBackgrounds[index].style.opacity = "unset";
-  });
-});
-
 const headerMenu = document.querySelector(".header__menu");
 
 const headerLogo = document.querySelector(".header__logo");

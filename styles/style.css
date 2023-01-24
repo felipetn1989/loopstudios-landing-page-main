@@ -224,18 +224,66 @@ p {
 }
 
 .creation {
+  position: relative;
   width: 100%;
   height: 7.25rem;
   position: relative;
+  background: transparent no-repeat center center/cover;
 }
 
-.creation__background {
+.creation__title {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  padding: 3.25rem 0 0.5rem 1rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 70%,
+    rgb(0, 0, 0)
+  );
+}
+
+.creation:hover {
+  cursor: pointer;
+}
+
+.creation:hover > .creation__title {
+  color: var(--Black);
+  background-color: rgba(255, 255, 255, 0.507);
+}
+
+.deepEarth {
+  background-image: url("../images/mobile/image-deep-earth.jpg");
+}
+
+.nightArcade {
+  background-image: url(../images/mobile/image-night-arcade.jpg);
+}
+
+.soccerTeam {
+  background-image: url(../images/mobile/image-soccer-team.jpg);
+}
+
+.theGrid {
+  background-image: url(../images/mobile/image-grid.jpg);
+}
+
+.aboveVR {
+  background-image: url(../images/mobile/image-from-above.jpg);
+}
+
+.borealis {
+  background-image: url(../images/mobile/image-pocket-borealis.jpg);
+}
+
+.curiosity {
+  background-image: url(../images/mobile/image-curiosity.jpg);
+}
+
+.fisheye {
+  background-image: url(../images/mobile/image-fisheye.jpg);
 }
 
 .see_mobile,
@@ -482,14 +530,46 @@ footer .menu_list {
     position: relative;
   }
 
-  .creation__title {
-    position: absolute;
-    bottom: 2rem;
-    font-size: 2rem;
+  .deepEarth {
+    background-image: url("../images/desktop/image-deep-earth.jpg");
   }
 
-  .creation__background {
-    filter: brightness(70%);
+  .nightArcade {
+    background-image: url(../images/desktop/image-night-arcade.jpg);
+  }
+
+  .soccerTeam {
+    background-image: url(../images/desktop/image-soccer-team.jpg);
+  }
+
+  .theGrid {
+    background-image: url(../images/desktop/image-grid.jpg);
+  }
+
+  .aboveVR {
+    background-image: url(../images/desktop/image-from-above.jpg);
+  }
+
+  .borealis {
+    background-image: url(../images/desktop/image-pocket-borealis.jpg);
+  }
+
+  .curiosity {
+    background-image: url(../images/desktop/image-curiosity.jpg);
+  }
+
+  .fisheye {
+    background-image: url(../images/desktop/image-fisheye.jpg);
+  }
+
+  .creation__title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 22rem 0 0.5rem 1rem;
+    font-size: 1.875rem;
   }
 
   .see_mobile {
