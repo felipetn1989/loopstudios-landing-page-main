@@ -399,6 +399,7 @@ footer .menu_list {
       "one two";
     grid-template-columns: 3fr 1fr;
     position: relative;
+    margin-top: 6rem;
   }
 
   .studio_info {
