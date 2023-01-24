@@ -282,6 +282,13 @@ footer {
   list-style-type: none;
 }
 
+.linkUnderline {
+  width: 1.25rem;
+  height: 0.0625rem;
+  margin: auto;
+  margin-bottom: 0.0625rem;
+}
+
 footer .menu_list {
   padding: 0;
 }
@@ -293,10 +300,9 @@ footer .menu_list {
   font-weight: var(--fw-regular);
 }
 
-.footer__menu a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
+.footer__menu a:hover + .linkUnderline {
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
 }
 
 .icons {
@@ -341,7 +347,7 @@ footer .menu_list {
       "three three";
     grid-template-columns: 1.5fr 1fr;
     padding: 4rem 11rem;
-    background-image: url('../images/desktop/image-hero.jpg');
+    background-image: url("../images/desktop/image-hero.jpg");
   }
 
   #menuIcon {
@@ -388,9 +394,14 @@ footer .menu_list {
     align-items: center;
   }
 
-  .header__menu__list li:hover {
-    text-decoration: underline;
-    text-underline-offset: 1rem;
+  .linkUnderline {
+    height: 0.5rem;
+  }
+
+  /* The plus sign indicates that when I hover the mouse on the header__menu__list anchor, the styles will be applied to the .linkUnderline element directly after the anchors in the HTML code */
+
+  .header__menu__list a:hover + .linkUnderline {
+    border-bottom: 1px solid white;
   }
 
   .studio_info_header {
